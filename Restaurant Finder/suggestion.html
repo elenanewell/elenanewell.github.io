@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>All</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./suggestion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Questrial&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!--NAVIGATION-->
+<header>
+    <nav class="nav">
+        <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="restaurants.html">RESTAURANTS</a></li>
+            <li><a href="category.html">BY CATEGORY</a></li>
+            <li class="active"><a href="suggestion.html">ADD A SUGGESTION</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!--TITLE-->
+<div class="title">
+    <img class="banner" src="./banner2.png">
+    <div class="centered">
+        <h1 class="page_title">ADD A SUGGESTION</h1>
+        <p>Found an amazing restaurant? Share with the world below!</p>
+    </div>
+</div>
+    
+<!--FORM-->
+    <div class="container">
+        <form id = "myForm" action="submit-form.php" method="POST">
+    
+        <label for="fname">Restaurant Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Tonkotsu">
+    
+        <label for="lname">Borough</label>
+        <input type="text" id="lname" name="lastname" placeholder="Camden">
+    
+        <label for="country">Category</label>
+        <select id="country" name="country">
+            <option value="australia">Expensive</option>
+            <option value="canada">Affordable</option>
+            <option value="usa">Dressy</option>
+            <option value="usa">Casual</option>
+            <option value="usa">Independent</option>
+            <option value="usa">Chain</option>
+        </select>
+
+        <label for="lname">Type of Cuisine</label>
+        <input type="text" id="lname" name="lastname" placeholder="Japanese">
+    
+        <label for="subject">Description</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" onclick="myFunction()" value="SUBMIT">
+    
+        </form>
+    </div>
+
+                    
+<!--FOOTER-->
+    <footer>
+        <nav class="nav1">
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="restaurants.html">RESTAURANTS</a></li>
+                <li><a href="category.html">BY CATEGORY</a></li>
+                <li><a href="suggestion.html">ADD A SUGGESTION</a></li>
+            </ul>
+        </nav>
+        <div class="media-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+    </footer>
+  
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
